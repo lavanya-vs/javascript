@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #64f0f763;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff; 
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 2px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+           
+        }
+    </style>
+</head>
+<body>
+   <center>
+   <h1>TO CHECK IF A YEAR IS LEAP YEAR OR NOT </h1>
+   <button onclick="checkLeapYear()">Check Leap Year</button>
+   </center> 
+   <script>
+     function checkLeapYear(){
+    let year=prompt('Enter the year')
+    year=Number(year)
+   
+        if( year % 4==0){
+            document.write(`<h1 style="color:green;font-weight:2000;text-align:center;margin-top:200px;">LEAP YEAR</h1>`)
+        }
+        else{
+            document.write(`<h1 style="color:red">NOT A LEAP YEAR</h1>`)
+        }
+    }
+   
+   </script>
+</body>
+</html>

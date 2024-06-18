@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>LARGEST OF TWO NUMBERS</h1>
+    </center>
+
+    <script>
+        let a=prompt('enter the first number');
+        let b=prompt('enter the second number');
+
+        a = Number(a);
+        b = Number(b);
+
+        function largestOfTwo(a,b){
+            if(a>b){
+                document.write(`<h1 style="color:blue">First Number is GREATER</h1>`)
+        }
+        else{
+            document.write(`<h1 style="color:darkred">Second Number is  GREATER</h1>`)
+        }
+    }
+
+    largestOfTwo(a, b);
+    </script>
+</body>
+</html>

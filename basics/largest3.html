@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    h1 {
+        color: #333;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px 2px;
+        border: solid 1px black;
+        border-radius: 12px;
+    }
+    button:hover {
+        background-color: #3bea44;
+       }
+</style>
+</head>
+<body>
+    <center>
+        <h1>LARGEST OF THREE NUMBERS</h1>
+        <button onclick="largestOfThree()">largest Of Three is</button>
+    </center>
+    
+   
+    <script>
+        function largestOfThree(){
+
+      
+        let a=prompt('enter a');
+        let b=prompt('enter b');
+        let c=prompt('enter c');
+
+        a=Number(a);
+        b=Number(b);
+        c=Number(c);
+
+        
+            if (a >= b && a >= c) {
+                document.write(`<h1 style="color:red"> A is largest amongst all</h1>`)
+            }
+            else if(b>=a && b>=c){
+                document.write(`<h1 style="color:blue"> B is largest amongst all</h1>`)
+            }
+            else
+            {
+                document.write(`<h1 style="color:green"> C is largest amongst all</h1>`)
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

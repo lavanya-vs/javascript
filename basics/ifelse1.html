@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .center {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            outline: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>IF ELSE EXAMPLE USING DAY</h1>
+        <button onclick="dayy()">CHECK</button>
+    </center>
+<script>
+
+    function dayy(){
+
+   
+    let day = prompt('enter the day');
+
+if (day === "monday") {
+   document.write(`<h1>Today is Monday</h1>`);
+} else if (day === "tuesday") {
+    document.write(`<h1>Today is Tuesday</h1>`);
+} else if (day === "wednesday") {
+    document.write(`<h1>Today is Wednesday</h1>`);
+} else if (day === "thursday") {
+    document.write(`<h1>Today is Thursday</h1>`);
+} else if (day === "friday") {
+    document.write(`<h1>Today is Friday</h1>`);
+} else {
+    document.write(`<h1>Today is saturday or sunday</h1>`);
+}
+}
+</script>
+
+</body>
+</html>

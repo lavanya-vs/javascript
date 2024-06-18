@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let age =prompt('enter the age');
+    age=Number(age);
+let gender = prompt('enter the gender');
+gender=Number(gender);
+
+if (age < 18) {
+    if (gender === "male") {
+        document.write("boy");
+    } else {
+        document.write("girl");
+    }
+} else if (age < 35) {
+    if (gender === "male") {
+        document.write("young man");
+    } else {
+        document.write("young woman");
+    }
+} else if (age < 50) {
+    if (gender === "male") {
+        document.write("adult man");
+    } else {
+        document.write("adult woman");
+    }
+} else if (age < 65) {
+    if (gender === "male") {
+        document.write("middle-aged man");
+    } else {
+        document.write("middle-aged woman");
+    }
+} else {
+    if (gender === "Male") {
+        document.write("senior man");
+    } else {
+        document.write("senior woman");
+    }
+}
+</script>
+</body>
+</html>
